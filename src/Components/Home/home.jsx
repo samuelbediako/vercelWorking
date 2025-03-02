@@ -576,6 +576,71 @@ function Home() {
               </div>
             </div>
           </div>
+
+          <footer className="foott">
+          <div className="fft">
+            <h3 className="text-lg font-semibold mb-4">Products</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#">AI</a></li>
+              <li><a href="#">Enterprise</a></li>
+              <li><a href="#">Fluid Compute</a></li>
+              <li><a href="#">Next.js</a></li>
+              <li><a href="#">Observability</a></li>
+              <li><a href="#">Previews</a></li>
+              <li><a href="#">Rendering</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Turbo</a></li>
+            </ul>
+          </div>
+
+          <div className="fft">
+            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#">Community </a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Solution Partners</a></li>
+              <li><a href="#">Templates</a></li>
+            </ul>
+          </div>
+
+          <div className="fft">
+            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal </a></li>
+            </ul>
+          </div>
+
+          <div className="fft">
+            <h3 className="text-lg font-semibold mb-4">Social</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li className="flex items-center gap-2">
+                 <a href="#">GitHub</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <a href="#">LinkedIn</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <a href="#">Twitter</a>
+              </li>
+              <li className="flex items-center gap-2">
+                 <a href="#">YouTube</a>
+              </li>
+            </ul>
+          </div>
+          </footer>
         </div>
       </div>
     </>

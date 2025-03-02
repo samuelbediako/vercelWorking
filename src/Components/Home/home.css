@@ -470,3 +470,24 @@
 .st-gd-btn-divv a:hover{
     background-color: #616161;
 }
+
+.foott{
+    width: 70%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.fft ul li{
+list-style: none;
+margin: 10px 0;
+}
+
+.fft ul li a{
+    color: #fff;
+    text-decoration: none;
+    }
+
+
