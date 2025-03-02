@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-big{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    z-index: 5;
+    background-color: black;
+}
+
+.log-pagn{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo .fa-play{
+    rotate: Z 32deg;
+    margin-top: 5px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.logo .logname{
+    font-size: 35px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-left: -4px;
+    margin-top: -6px;
+    color: #fff;
+}
+
+.pagesnav{
+    display: flex;
+    gap: 0px;
+}
+
+.pagesnav li{
+    list-style: none;
+    width: 140px;
+    border: 1px solid #ffffff00;
+    padding: 4px 2px;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    position: relative;
+}
+
+.pagesnav li a{
+    text-decoration: none;
+    color: #fff;
+    font: 17px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+}
+
+.pagesnav li:hover {
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 5px 7px;
+}
+
+.pagesnav li:hover .fa-chevron-down{
+    rotate: Z 180deg;
+}
+
+.pagesnav li a .fa-chevron-down{
+    font-size: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.prodnav:hover .prd-nn{
+    display: flex;
+}
+
+.solunav:hover .prd-nn2{
+    display: flex;
+}
+
+.reso:hover .prd-nn3{
+    display: flex;
+}
+
+.add-info a {
+    margin: 0 7px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 13px;
+    border-radius:5px ;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.prd-nn{
+    width: 850px;
+    height: 450px;
+    position: absolute;
+    top:10px;
+    left:-50px;
+    transition: all .4s ease-in-out;
+    display: none;
+    align-items: flex-end;
+}
+
+.prd-nn2{
+    width: 650px;
+    height: 480px;
+    position: absolute;
+    top:15px;
+    left:-190px;
+    transition: all .4s ease-in-out;
+    display: none;
+    align-items: flex-end;
+}
+
+.prd-nn3{
+    width: 650px;
+    height: 480px;
+    position: absolute;
+    top:15px;
+    left:-330px;
+    transition: all .4s ease-in-out;
+    display: none;
+    align-items: flex-end;
+}
+
+.prod-dpl{
+    width: 100%;
+    height: 90%;
+    border-radius:20px ;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    background-color: black;
+}
+
+.prod-dpl .prod-dpl1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    padding: 10px;  
+}
+
+.prod-dpl .prod-dpl1 .compnet{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.prod-dpl .prod-dpl1 .compnet:hover i{
+    background-color: #fff;
+    color: black;
+}
+
+.prod-dpl .prod-dpl1 .compnet i{
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius:8px;
+    transition: all .5s ease-in-out;
+}
+
+
+.prod-dpl .prod-dpl1 .compnet .cp-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.grd-div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.grdimg{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    
+}
+
+.grdimg .gimgg{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.grdimg .grtext{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.354);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+}
+
+.grdimg .grtext h1{
+    font-size: 3rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.grdimg .grtext p{
+    width: 600px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.st-gd-btn-div{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.st-gd-btn-div a{
+    width: 200px;
+    background-color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    border: 1px solid #fff;
+    font-weight: 600;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    z-index: 4;
+}
+
+.st-gd-btn-div a:hover{
+    background-color: #616161;
+}
+
+.prmd-div{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.prmd-div img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    rotate: Z 20deg;
+    filter: 
+    drop-shadow(-80px -20px 90px rgb(0, 255, 0)) 
+    drop-shadow(100px -20px 90px red) 
+    drop-shadow(-90px 90px 90px blue) 
+    drop-shadow(40px -20px 90px yellow) 
+    drop-shadow(0 0 0px black);
+}
+
+.rect{
+    width: 70%;
+    height: 300px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.rect h1{
+    font-size: 2.6rem;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.spce{
+    width: 70%;
+    height: 30px;
+    border: 1px solid #fff;
+}
+
+.gitt{
+    width: 70%;
+    height: 80vh;
+    border: 1px solid #fff;
+    display: flex;
+}
+
+.gitt .lft{
+    border: 1px solid #fff;
+    flex: 1;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.glimg {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+}
+
+.glimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.gitt .rit{
+    border: 1px solid #fff;
+    flex: 1;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.grimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.stats{
+    width: 70%;
+    height: 450px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 30px;
+    background-image: url('../../assets/analytics-large-dark.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.stats h2{
+    width: 60%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 2rem;
+   
+}
+
+.scaleb{
+    width: 70%;
+    height: 200px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.scaleb h2{
+    font-size: 1.9rem;
+}
+
+.scaleb h2 span{
+    font-size: 19px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.readyy{
+    width: 70%;
+    height: 250px;
+    border: 1px solid #fff;
+    padding: 30px;
+    display: flex;
+}
+
+.llft{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.llft h3{
+    width: 80%;
+}
+
+.rrft{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.st-gd-btn-divv{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.st-gd-btn-divv a{
+    width: 200px;
+    background-color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    border: 1px solid #fff;
+    font-weight: 600;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    z-index: 4;
+}
+
+.st-gd-btn-divv a:hover{
+    background-color: #616161;
+}
